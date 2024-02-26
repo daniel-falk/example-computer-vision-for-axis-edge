@@ -1,3 +1,9 @@
+# Outdated repo
+This repository is mostly outdated. There has been a lot of new thins happening with the Axis ACAP SDKs since this repo was created. The repo does however contain a lot of valuable information, therefore I will leave it here as a reference.
+
+For more up to date inforation, take a look at the [AXIS Native SDK](https://github.com/AxisCommunications/acap-native-sdk-examples/) and the [AXIS Computer Vision SDK](https://github.com/AxisCommunications/acap-computer-vision-sdk-examples). You can also read my [comprehensive article on what SDK to use](https://www.linkedin.com/pulse/comprehensive-guide-axis-network-camera-edge-application-sdks/).
+
+# Embedded Computer Vision
 This repository was created for a webinar on "Embedded computer vision" both to show how easy it is to get started with image analytics in an Axis network camera but also to show some interesting aspects of images as byte arrays. The code does only work (with expected outcome) on a few of the Axis cameras (specifically the ones with ARMv7 architecture and NV12 as native format).
 
 The very simple analytics application that is the final result of the webinar will guess the up- and down direction based on where the colors are more "sky like". The image is splitted in two parts and the ratio of pixels with higer Cb (blue shift) than Cr (red shift) value are counted and compared between the upper and lower part of the image. The binary image seen here is the result of only the thresholding and was created using the [`show_blue_threshold.c`](https://github.com/fixedit-ai/example-computer-vision-for-axis-edge/blob/main/show_blue_threshold.c) file.
